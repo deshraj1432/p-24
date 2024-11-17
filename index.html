@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Support Our Cause</h1>
+        <p>Your donation makes a difference!</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label>Choose an Amount</label>
+                <div class="amount-options">
+                    
+
+                    <input type="radio" id="amount25" name="amount" value="25">
+                    <label for="amount25">$25</label>
+
+                    <input type="radio" id="amount50" name="amount" value="50">
+                    <label for="amount50">$50</label>
+
+                    <input type="radio" id="amount100" name="amount" value="100">
+                    <label for="amount100">$100</label>
+
+                    <input type="radio" id="amountOther" name="amount" value="other">
+                    <label for="amountOther">Other</label>
+
+                    <!-- Input for custom amount, always visible -->
+                    <input type="text" id="otherAmount" name="otherAmount" placeholder="Enter Amount">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="frequency">Donation Frequency</label>
+                <select id="frequency" name="frequency">
+                    <option value="one-time">One-Time</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="payment">Credit/Debit Card Number</label>
+                <input type="text" id="payment" name="payment" placeholder="Card Number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiration">Expiration Date (MM/YY)</label>
+                <input type="text" id="expiration" name="expiration" placeholder="MM/YY" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Donate Now" class="submit-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
